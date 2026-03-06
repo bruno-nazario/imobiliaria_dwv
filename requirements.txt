@@ -1,0 +1,51 @@
+# =============================================================================
+# requirements.txt — Previsão de Ciclo de Vendas Imobiliárias
+# =============================================================================
+# Gerado a partir de:
+#   - src/train.py
+#   - src/pipeline.py
+#   - src/api.py
+#   - tests/test_api.py
+#   - notebooks/Notebook_final.ipynb
+#
+# Instalar:
+#   pip install -r requirements.txt
+# =============================================================================
+
+
+# ── Dados e computação numérica ───────────────────────────────────────────────
+pandas>=2.2.0
+numpy>=1.26.0
+scipy>=1.12.0
+
+
+# ── Machine Learning ──────────────────────────────────────────────────────────
+scikit-learn>=1.4.0
+xgboost>=2.0.0
+lightgbm>=4.3.0
+
+
+# ── Tuning de hiperparâmetros ─────────────────────────────────────────────────
+optuna>=3.6.0
+
+
+# ── Visualização (notebook) ───────────────────────────────────────────────────
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+
+# ── API ───────────────────────────────────────────────────────────────────────
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.6.0
+
+
+# ── Testes ────────────────────────────────────────────────────────────────────
+pytest>=8.0.0
+requests>=2.31.0
+
+
+# ── Notebook ─────────────────────────────────────────────────────────────────
+jupyter>=1.0.0
+ipykernel>=6.29.0
+ipywidgets>=8.1.0          # usado pelo optuna (progress bar no notebook)
